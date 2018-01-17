@@ -1,6 +1,6 @@
 #-------------------------------------------------
 #
-# Project created by QtCreator 2018-01-16T14:54:59
+# Project created by QtCreator 2018-01-17T10:39:01
 #
 #-------------------------------------------------
 
@@ -25,10 +25,13 @@ DEFINES += QT_DEPRECATED_WARNINGS
 
 SOURCES += \
         main.cpp \
-        mainwindow.cpp
+        hellodialog.cpp
 
 HEADERS += \
-        mainwindow.h
+        hellodialog.h
 
 FORMS += \
-        mainwindow.ui
+        hellodialog.ui
+
+RC_FILE += \
+    myico.rc
