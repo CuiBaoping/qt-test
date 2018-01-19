@@ -33,5 +33,5 @@ HEADERS += \
 FORMS += \
         hellodialog.ui
 
-RC_FILE += \
-    myico.rc
+RC_ICONS += \
+    myico.ico
