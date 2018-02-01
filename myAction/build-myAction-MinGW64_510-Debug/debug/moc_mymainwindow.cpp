@@ -1,16 +1,16 @@
 /****************************************************************************
-** Meta object code from reading C++ file 'mywidget.h'
+** Meta object code from reading C++ file 'mymainwindow.h'
 **
 ** Created by: The Qt Meta Object Compiler version 67 (Qt 5.5.0)
 **
 ** WARNING! All changes made in this file will be lost!
 *****************************************************************************/
 
-#include "../../myLayout/mywidget.h"
+#include "../../myAction/mymainwindow.h"
 #include <QtCore/qbytearray.h>
 #include <QtCore/qmetatype.h>
 #if !defined(Q_MOC_OUTPUT_REVISION)
-#error "The header file 'mywidget.h' doesn't include <QObject>."
+#error "The header file 'mymainwindow.h' doesn't include <QObject>."
 #elif Q_MOC_OUTPUT_REVISION != 67
 #error "This file was generated using the moc from 5.5.0. It"
 #error "cannot be used with the include files from this version of Qt."
@@ -18,28 +18,28 @@
 #endif
 
 QT_BEGIN_MOC_NAMESPACE
-struct qt_meta_stringdata_myWidget_t {
+struct qt_meta_stringdata_myMainWindow_t {
     QByteArrayData data[4];
-    char stringdata0[40];
+    char stringdata0[29];
 };
 #define QT_MOC_LITERAL(idx, ofs, len) \
     Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
-    qptrdiff(offsetof(qt_meta_stringdata_myWidget_t, stringdata0) + ofs \
+    qptrdiff(offsetof(qt_meta_stringdata_myMainWindow_t, stringdata0) + ofs \
         - idx * sizeof(QByteArrayData)) \
     )
-static const qt_meta_stringdata_myWidget_t qt_meta_stringdata_myWidget = {
+static const qt_meta_stringdata_myMainWindow_t qt_meta_stringdata_myMainWindow = {
     {
-QT_MOC_LITERAL(0, 0, 8), // "myWidget"
-QT_MOC_LITERAL(1, 9, 21), // "on_pushButton_toggled"
-QT_MOC_LITERAL(2, 31, 0), // ""
-QT_MOC_LITERAL(3, 32, 7) // "checked"
+QT_MOC_LITERAL(0, 0, 12), // "myMainWindow"
+QT_MOC_LITERAL(1, 13, 7), // "setText"
+QT_MOC_LITERAL(2, 21, 0), // ""
+QT_MOC_LITERAL(3, 22, 6) // "string"
 
     },
-    "myWidget\0on_pushButton_toggled\0\0checked"
+    "myMainWindow\0setText\0\0string"
 };
 #undef QT_MOC_LITERAL
 
-static const uint qt_meta_data_myWidget[] = {
+static const uint qt_meta_data_myMainWindow[] = {
 
  // content:
        7,       // revision
@@ -56,45 +56,45 @@ static const uint qt_meta_data_myWidget[] = {
        1,    1,   19,    2, 0x08 /* Private */,
 
  // slots: parameters
-    QMetaType::Void, QMetaType::Bool,    3,
+    QMetaType::Void, QMetaType::QString,    3,
 
        0        // eod
 };
 
-void myWidget::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void **_a)
+void myMainWindow::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void **_a)
 {
     if (_c == QMetaObject::InvokeMetaMethod) {
-        myWidget *_t = static_cast<myWidget *>(_o);
+        myMainWindow *_t = static_cast<myMainWindow *>(_o);
         Q_UNUSED(_t)
         switch (_id) {
-        case 0: _t->on_pushButton_toggled((*reinterpret_cast< bool(*)>(_a[1]))); break;
+        case 0: _t->setText((*reinterpret_cast< const QString(*)>(_a[1]))); break;
         default: ;
         }
     }
 }
 
-const QMetaObject myWidget::staticMetaObject = {
-    { &QWidget::staticMetaObject, qt_meta_stringdata_myWidget.data,
-      qt_meta_data_myWidget,  qt_static_metacall, Q_NULLPTR, Q_NULLPTR}
+const QMetaObject myMainWindow::staticMetaObject = {
+    { &QMainWindow::staticMetaObject, qt_meta_stringdata_myMainWindow.data,
+      qt_meta_data_myMainWindow,  qt_static_metacall, Q_NULLPTR, Q_NULLPTR}
 };
 
 
-const QMetaObject *myWidget::metaObject() const
+const QMetaObject *myMainWindow::metaObject() const
 {
     return QObject::d_ptr->metaObject ? QObject::d_ptr->dynamicMetaObject() : &staticMetaObject;
 }
 
-void *myWidget::qt_metacast(const char *_clname)
+void *myMainWindow::qt_metacast(const char *_clname)
 {
     if (!_clname) return Q_NULLPTR;
-    if (!strcmp(_clname, qt_meta_stringdata_myWidget.stringdata0))
-        return static_cast<void*>(const_cast< myWidget*>(this));
-    return QWidget::qt_metacast(_clname);
+    if (!strcmp(_clname, qt_meta_stringdata_myMainWindow.stringdata0))
+        return static_cast<void*>(const_cast< myMainWindow*>(this));
+    return QMainWindow::qt_metacast(_clname);
 }
 
-int myWidget::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
+int myMainWindow::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
 {
-    _id = QWidget::qt_metacall(_c, _id, _a);
+    _id = QMainWindow::qt_metacall(_c, _id, _a);
     if (_id < 0)
         return _id;
     if (_c == QMetaObject::InvokeMetaMethod) {
